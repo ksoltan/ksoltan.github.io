@@ -214,6 +214,13 @@ button.btn, input.btn {
   }
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .section-title {
   position: relative;
   margin: 0 auto;
