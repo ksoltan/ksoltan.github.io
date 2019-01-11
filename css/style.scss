@@ -207,7 +207,7 @@ button.btn, input.btn {
     margin-top: 2em;
   }
   .break {
-    margin: 8em 0;
+    margin: 4em 0;
     @include bp-xsmall {
       margin: 2em 0;
     }
@@ -251,7 +251,8 @@ button.btn, input.btn {
 }
 
 .content-wrap {
-  margin-bottom: 8em;
+  margin-bottom: 2em;
+  margin-left: 1.5em;
   @include bp-xsmall {
     margin-bottom: 2em;
   }
@@ -267,8 +268,8 @@ button.btn, input.btn {
     }
   }
   .content {
-    margin-top: 5em;
-    margin-left: 5em;
+    margin-top: -1.5em;
+    margin-left: 2em;
     @include bp-xsmall {
       margin-left: 0;
     }
@@ -286,7 +287,7 @@ button.btn, input.btn {
       }
     }
     .excerpt {
-      width: 80%;
+      width: 90%;
       @include bp-xsmall {
         width: 100%;
       }
