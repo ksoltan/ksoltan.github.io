@@ -13,15 +13,17 @@
 
         <div class="break"></div>
         {% for post in site.posts %}
-          <div class="wow fadeIn">
-          {% if post.position == "left" %}
-            {% include content-left.html %}
-          {% endif %}
+          {% if post.post_type != 'blog'%}
+            <div class="wow fadeIn">
+            {% if post.position == "left" %}
+              {% include content-left.html %}
+            {% endif %}
 
-          {% if post.position == "right" %}
-            {% include content-right.html %}
+            {% if post.position == "right" %}
+              {% include content-right.html %}
+            {% endif %}
+            </div>
           {% endif %}
-          </div>
         {% endfor %}
 
         {% include pagination.html %}

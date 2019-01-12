@@ -17,19 +17,12 @@
             {% if site.description != '' %}
             {{site.description}}
             {% endif %}
-
-            {% if site.enable_contact == true %}
-            {% include contact.html %}
-            {% include contact-modal.html %}
-            {% endif %}
           </p>
           {% endif %}
 
           <div class="hero-buttons">
 
             {% if site.email_username != '' %}
-              <!-- <a href="mailto:{{ site.email_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-envelope fa-lg"></i>Email</button></a> -->
-              <!-- {% include contact.html %} -->
               <a data-toggle="modal" data-target="#contact"><button class="btn btn-default btn-lg"><i class="fa fa-envelope fa-lg"></i>Email</button></a>
               {% include contact-modal.html %}
             {% endif %}

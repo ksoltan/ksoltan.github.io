@@ -1,6 +1,7 @@
 ---
 layout: inner
 position: left
+post_type: blog
 title: 'Rescue Themes'
 date: 2016-02-20 15:56:00
 categories: development design
