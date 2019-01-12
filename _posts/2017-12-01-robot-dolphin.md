@@ -4,7 +4,7 @@ position: right
 post_type: project
 title: 'Robot Dolphin'
 date: 2017-12-01 15:56:00
-categories: robotics
+categories: Robotics
 tags: Robotics Systems Solidworks Arduino
 featured_image: '/img/posts/dolphin_in_water.jpg'
 project_link: 'http://github.com/jamigibbs/weathercast'

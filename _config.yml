@@ -32,7 +32,6 @@ plugins:
 paginate: 10
 footer_text: '© 2019 Katerina Soltan'
 admin_name: 'Katerina Soltan'
-# google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: false
 
 #### Phantom Navigation menu
