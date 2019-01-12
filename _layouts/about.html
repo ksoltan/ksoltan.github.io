@@ -1,0 +1,37 @@
+{% include header.html %}
+<main id="aboutme">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% if page.title != '' %}
+        <h1 class="section-title text-center">{{ page.title }}</h1>
+        {% endif %}
+        {% if page.subtitle != '' %}
+        <p class="section-subtitle text-center">{{ page.subtitle }}</p>
+        {% endif %}
+
+        <div class="break"></div>
+
+        <div class="wow fadeIn">
+          <div class="content-wrap">
+            <div class="row align-top">
+                <div class="col-xs-12 col-md-6">
+                  <img class="img-responsive" src="{{ page.featured_image }}" title="{{ page.title }}">
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                  <div class="content">
+                    <p class="description">{{ page.content }}</p>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+{% include footer.html %}

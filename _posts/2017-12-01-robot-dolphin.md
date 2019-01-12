@@ -1,6 +1,7 @@
 ---
 layout: inner
 position: right
+post_type: project
 title: 'Robot Dolphin'
 date: 2017-12-01 15:56:00
 categories: robotics
