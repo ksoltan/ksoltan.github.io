@@ -10,5 +10,6 @@ featured_image: '/img/posts/tree_squirrel/top.jpg'
 project_link:
 button_icon: 'cog'
 button_text: 'Coming Soon'
-lead_text: 'A wind-powered sculpture which changes seasons as the wind pushes the leaves around. The final prototype was hung on light posts on the Olin campus and displayed to the public.'
+lead_text: 'A wind-powered sculpture which changes seasons as the wind pushes the leaves around.'
+secondary_text: 'The final prototype was hung on light posts on the Olin campus and displayed to the public.'
 ---
