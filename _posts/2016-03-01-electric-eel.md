@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: left
 post_type: project
 title: 'Electric Eel'
 date: 2016-03-01 00:00:00

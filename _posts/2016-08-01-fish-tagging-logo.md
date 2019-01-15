@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: left
 post_type: blog
 title: 'RFID Fish Tagging Logo Design'
 date: 2016-08-01 00:00:00

@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: right
 post_type: project
 title: 'Tree Squirrel Wind Sculpture'
 date: 2016-05-01 00:00:00

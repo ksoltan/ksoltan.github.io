@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: left
 post_type: project
 title: 'RFID Fish Tagging Research'
 date: 2016-07-01 00:00:00

@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: right
 post_type: project
 title: 'Dragoncat Play Experience'
 date: 2015-12-01 00:00:00

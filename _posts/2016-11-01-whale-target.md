@@ -1,6 +1,5 @@
 ---
 layout: inner
-position: right
 post_type: project
 title: 'Whale Target'
 date: 2016-11-01 00:00:00
