@@ -6,8 +6,10 @@
   <p class="excerpt">{{ post.secondary_text }}</p>
   {% endif %}
 
-  {% if post.project_link != empty %}
+  {% if post.project_link %}
   <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  {% else %}
+  <a class="project-link"><button class="btn btn-default btn-lg" disabled><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
   {% endif %}
 
   {% if post.tags != empty %}

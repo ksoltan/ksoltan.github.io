@@ -1,0 +1,15 @@
+<div>
+  	<div>
+    	<h3>Recent Posts</h3>
+  	</div>
+	<div class="flexslider">
+		<ul class="slides">
+	  		{% for post in site.posts %}
+	  		<li>
+	  			{% include featured-image.html %}
+	 		</li>
+	  		{% endfor %}
+		</ul>
+	</div>
+	<p style="text-align: center"><a href="{{ site.url }}/posts-page">See All Posts</a></p>
+</div>
