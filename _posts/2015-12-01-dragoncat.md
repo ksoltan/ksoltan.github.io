@@ -4,7 +4,7 @@ position: right
 post_type: project
 title: 'Dragoncat Play Experience'
 date: 2015-12-01 00:00:00
-categories: Design Prototyping
+categories: experience
 tags: Design User-Centered Biomimicry
 featured_image: '/img/posts/dragoncat/the_river.jpg'
 project_link:

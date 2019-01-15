@@ -4,7 +4,7 @@ position: left
 post_type: project
 title: 'RFID Fish Tagging Research'
 date: 2016-07-01 00:00:00
-categories: Design
+categories: experience
 tags: UX-Design Android Research
 featured_image: '/img/posts/fish_tagging/fish_tags_logo.png'
 project_link:

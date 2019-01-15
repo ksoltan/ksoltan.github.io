@@ -4,7 +4,7 @@ position: right
 post_type: project
 title: 'Whale Target'
 date: 2016-11-01 00:00:00
-categories: Design
+categories: experience
 tags: Design Fabrication Project-Management
 featured_image: '/img/posts/whale_target/stage1Build.jpg'
 project_link:

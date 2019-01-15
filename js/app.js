@@ -12,6 +12,7 @@ $(window).load(function() {
     directionNav: true,
     slideshowSpeed: 5000,
     animationSpeed: 600,
-    touch: true
+    touch: true,
+    controlNav: "thumbnails"
     });
 });

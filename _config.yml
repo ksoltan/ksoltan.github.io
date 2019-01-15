@@ -34,6 +34,8 @@ footer_text: '© 2019 Katerina Soltan'
 admin_name: 'Katerina Soltan'
 enable_contact: false
 
+permalink: /:categories/:title:output_ext
+
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
