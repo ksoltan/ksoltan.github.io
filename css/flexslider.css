@@ -49,8 +49,10 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -142,12 +144,6 @@ html[xmlns] .flexslider .slides {
   background-size: contain;
   width: 40px; /* Grey icons are saves as 40px x 40 px. Otherwise, they get cut off. White images saves as 64px*/
   height: 40px;
-  /* font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001';
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); */
 }
 .flex-direction-nav a.flex-next:before {
   background: url('/img/next_grey.png') no-repeat center center;
@@ -242,13 +238,13 @@ html[xmlns] .flexslider .slides {
   cursor: default;
 }
 .flex-control-thumbs {
-  margin: 5px 0 0;
+  margin: 7px 0 0;
   position: static;
   overflow: hidden;
 }
 .flex-control-thumbs li {
   width: 25%;
-  float: left;
+  /* float: left; */
   margin: 0;
 }
 .flex-control-thumbs img {

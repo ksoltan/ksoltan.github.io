@@ -12,7 +12,6 @@ $(window).load(function() {
     slideshow: false,
     directionNav: true,
     animationSpeed: 600,
-    touch: true,
-    controlNav: "thumbnails"
+    touch: true
     });
 });

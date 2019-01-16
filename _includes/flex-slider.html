@@ -1,9 +1,10 @@
 {% if page.slide_show %}
-  <div class="flexslider">
+  <div class=" flex-design flexslider">
     <ul class="slides">
-      {% for slides in page.slide_show %}
-        <li data-thumb="{{ slides.image }}">
-          <img src="{{ slides.image }}">
+      {% for slide in page.slide_show %}
+        <li>
+          <p class="flex-caption">{{ slide.caption }}</p>
+          <img class="img-responsive flex-img" src="{{ slide.image }}">
         </li>
       {% endfor %}
     </ul>
