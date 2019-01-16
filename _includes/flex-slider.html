@@ -3,7 +3,7 @@
     <ul class="slides">
       {% for slide in page.slide_show %}
         <li>
-          <p class="flex-caption">{{ slide.caption }}</p>
+          <p class="slide_text">{{ slide.caption }}</p>
           <img class="img-responsive flex-img" src="{{ slide.image }}">
         </li>
       {% endfor %}

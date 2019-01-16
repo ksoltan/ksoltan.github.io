@@ -48,7 +48,7 @@ article {
   margin: 5em 0;
 }
 
-p {
+p, br {
   line-height: 1.8;
   font-size: 1.3em;
 }
@@ -457,7 +457,7 @@ button.btn, input.btn {
 }
 
 .flex-design{
-  width: 85%;
+  width: 80%;
   .flex-img {
     @include bp-xsmall {
       display: none;
@@ -466,62 +466,39 @@ button.btn, input.btn {
       display: none;
     }
   }
-}
 
-
-.flex-caption {
-  font-size: 18px;
-  margin-bottom: 6px;
-}
-
-.flex-caption-title {
-  font-size: 20px;
-  text-align: center;
-  padding: none;
-  margin-bottom: 0px;
-}
-
-
-.vertical-align {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.section-title {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1.35em;
-    width: 3em;
-    height: 3px;
-    background-color: #ECEFF1;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-.section-subtitle {
-  width: 40%;
-  margin: 0 auto;
-  @include bp-xsmall {
+  .slide_text {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: #fff;
+    display: block;
+    left: 0;
+    bottom:0;
+    padding: 1em;
     width: 100%;
+    zoom: 1;
   }
-  @include bp-small {
-    width: 60%;;
+
+  .flex-caption {
+    font-size: 18px;
+    margin-bottom: 6px;
+    // text-align: left;
+    // background-color: #e9edf0;
+  }
+
+  .flex-caption-title {
+    font-size: 20px;
+    text-align: center;
+    padding: none;
+    margin-bottom: 0px;
   }
 }
 
-.content-wrap {
+.post-content-wrap {
   margin-bottom: 2em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
   @include bp-xsmall {
     margin-bottom: 2em;
   }
@@ -536,11 +513,31 @@ button.btn, input.btn {
       display: none;
     }
   }
+  .videoWrapper {
+  	position: relative;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  	height: 0;
+  }
+  .videoWrapper iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
   .content {
-    margin-top: -1.5em;
-    margin-left: 2em;
+    margin-top: -3.7em;
+    margin-left: 0em;
+    text-align: left;
     @include bp-xsmall {
       margin-left: 0;
+    }
+    .description {
+      width: 95%;
+      @include bp-xsmall {
+        width: 100%;
+      }
     }
     h3.title {
       position: relative;
@@ -553,12 +550,6 @@ button.btn, input.btn {
         width: 3em;
         height: 3px;
         background-color: #ECEFF1;
-      }
-    }
-    .excerpt {
-      width: 95%;
-      @include bp-xsmall {
-        width: 100%;
       }
     }
     button{
