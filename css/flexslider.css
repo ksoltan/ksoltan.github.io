@@ -136,17 +136,23 @@ html[xmlns] .flexslider .slides {
   transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav a:before {
-  font-family: "flexslider-icon";
+  content: " ";
+  display: block;
+  background: url('/img/prev_grey.png') no-repeat center center;
+  background-size: contain;
+  width: 40px; /* Grey icons are saves as 40px x 40 px. Otherwise, they get cut off. White images saves as 64px*/
+  height: 40px;
+  /* font-family: "flexslider-icon";
   font-size: 40px;
   display: inline-block;
   content: '\f001';
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); */
 }
 .flex-direction-nav a.flex-next:before {
-  content: '\f002';
+  background: url('/img/next_grey.png') no-repeat center center;
 }
-.flex-direction-nav .flex-prev {
+.flex-direction-nav .flex-prev:before {
   left: -50px;
 }
 .flex-direction-nav .flex-next {
