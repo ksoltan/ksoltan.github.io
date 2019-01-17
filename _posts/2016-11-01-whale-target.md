@@ -17,4 +17,4 @@ This project was cool.
 This is another paragraph.
 Can we do a third one??
 {% endcapture %}
-{% include image-left.html content=project_description %}
+{% include image-left.html content=project_description%}
