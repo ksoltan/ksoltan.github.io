@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
 
@@ -34,7 +34,7 @@ $(window).resize(function() {
 
 // Kick off one resize to fix all videos on page load
 }).resize();
-</script>
+</script> -->
 
 <div class="post-content-wrap">
   <div class="row align-top">
@@ -47,6 +47,7 @@ $(window).resize(function() {
         </div>
         {% else %}
           <img class="img-responsive" src="{{ page.featured_image }}">
+          <p class="caption">{{include.image_caption}}</p>
         {% endif %}
       </div>
 
