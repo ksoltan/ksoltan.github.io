@@ -2,9 +2,20 @@
   <h3 class="title">{{ post.title }}</h3>
 
   <p class="excerpt">{{ post.lead_text }}</p>
+  {% if post.secondary_text != empty %}
+  <p class="excerpt">{{ post.secondary_text }}</p>
+  {% endif %}
 
-  {% if post.project_link != empty %}
-  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  {% if post.project_link %}
+  <a href="{{ post.project_link }}" class="project-link" target=_blank><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  {% else if post.url %}
+  <a href="{{ site.url}}{{ post.url }}" class="project-link" target=_blank><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  {% else %}
+  <a class="project-link"><button class="btn btn-default btn-lg" disabled><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
+  {% endif %}
+
+  {% if post.document_link %}
+  <a href="{{ site.url}}{{post.document_link}}" class="project-link" target=_blank><button class="btn btn-default btn-lg"><i class="fa fa-{{post.document_icon}} fa-lg"></i>{{post.document_text}}</button></a>
   {% endif %}
 
   {% if post.tags != empty %}

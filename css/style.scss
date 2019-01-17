@@ -48,7 +48,7 @@ article {
   margin: 5em 0;
 }
 
-p {
+p, br {
   line-height: 1.8;
   font-size: 1.3em;
 }
@@ -237,7 +237,7 @@ button.btn, input.btn {
 	2.2 About
 --------------------------------------------------------------*/
 #aboutme .container {
-  margin-top: 10em;
+  margin-top: 6em;
   @include bp-xsmall {
     margin-top: 2em;
   }
@@ -325,7 +325,7 @@ button.btn, input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 10em;
+  margin-top: 6em;
   @include bp-xsmall {
     margin-top: 2em;
   }
@@ -376,6 +376,7 @@ button.btn, input.btn {
 .content-wrap {
   margin-bottom: 2em;
   margin-left: 1.5em;
+  margin-right: 1.5em;
   @include bp-xsmall {
     margin-bottom: 2em;
   }
@@ -410,9 +411,149 @@ button.btn, input.btn {
       }
     }
     .excerpt {
-      width: 90%;
+      width: 95%;
       @include bp-xsmall {
         width: 100%;
+      }
+    }
+    button{
+      font-size: 16px;
+      margin-left: 0;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+    .tags, .categories {
+      margin: 2em 0;
+      span {
+        color: #9eb1bd;
+        background-color: #ECEFF1;
+        padding: 0.5em 1.5em;
+        display: inline-block;
+        margin-bottom: 0.5em;
+      }
+    }
+    .categories span {
+      color: #b9b1ad;
+      background-color: #EFEBE9;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	3.1 Post Contents
+--------------------------------------------------------------*/
+#post_content .container {
+  margin-top: 6em;
+  align-items: center;
+  @include bp-xsmall {
+    margin-top: 2em;
+  }
+  .break {
+    margin: 4em 0;
+    @include bp-xsmall {
+      margin: 2em 0;
+    }
+  }
+}
+
+.flex-design{
+  width: 80%;
+  .flex-img {
+    @include bp-xsmall {
+      display: none;
+    }
+    @include bp-small {
+      display: none;
+    }
+  }
+
+  .slide_text {
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: #fff;
+    display: block;
+    left: 0;
+    bottom:0;
+    padding: 1em;
+    width: 100%;
+    zoom: 1;
+  }
+
+  .flex-caption {
+    font-size: 18px;
+    margin-bottom: 6px;
+    // text-align: left;
+    // background-color: #e9edf0;
+  }
+
+  .flex-caption-title {
+    font-size: 20px;
+    text-align: center;
+    padding: none;
+    margin-bottom: 0px;
+  }
+}
+
+.post-content-wrap {
+  margin-bottom: 2em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  @include bp-xsmall {
+    margin-bottom: 2em;
+  }
+  @include bp-small {
+    margin-bottom: 2em;
+  }
+  img.img-responsive {
+    @include bp-xsmall {
+      display: none;
+    }
+    @include bp-small {
+      display: none;
+    }
+  }
+  .videoWrapper {
+  	position: relative;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  	height: 0;
+  }
+  .videoWrapper iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+  p.caption {
+    text-align: left;
+    font-style: italic;
+  }
+  .content {
+    margin-top: -3.7em;
+    margin-left: 0em;
+    text-align: left;
+    @include bp-xsmall {
+      margin-left: 0;
+    }
+    .description {
+      width: 95%;
+      @include bp-xsmall {
+        width: 100%;
+      }
+    }
+    h3.title {
+      position: relative;
+      margin-bottom: 1.5em;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        width: 3em;
+        height: 3px;
+        background-color: #ECEFF1;
       }
     }
     button{

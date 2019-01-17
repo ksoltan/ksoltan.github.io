@@ -1,0 +1,12 @@
+{% if page.slide_show %}
+  <div class=" flex-design flexslider">
+    <ul class="slides">
+      {% for slide in page.slide_show %}
+        <li>
+          <p class="slide_text">{{ slide.caption }}</p>
+          <img class="img-responsive flex-img" src="{{ slide.image }}">
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}

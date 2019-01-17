@@ -12,16 +12,16 @@
         {% endif %}
 
         <div class="break"></div>
-        
+        {% assign align = "right" %}
         {% for post in site.posts %}
           {% if post.post_type != 'blog'%}
             <div class="wow fadeIn">
-            {% if post.position == "left" %}
+            {% if align == "left" %}
               {% include content-left.html %}
-            {% endif %}
-
-            {% if post.position == "right" %}
+              {% assign align = "right" %}
+            {% else if align == "right" %}
               {% include content-right.html %}
+              {% assign align = "left" %}
             {% endif %}
             </div>
           {% endif %}
