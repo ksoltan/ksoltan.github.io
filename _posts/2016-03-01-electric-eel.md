@@ -4,7 +4,7 @@ post_type: project
 title: 'Electric Eel'
 date: 2016-03-01 00:00:00
 categories: experience
-tags: Solidworks Fabrication
+tags: CAD Fabrication
 featured_image: '/img/posts/electric_eel/bottom.jpg'
 project_link:
 button_icon: 'cog'

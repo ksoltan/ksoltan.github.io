@@ -4,7 +4,7 @@ post_type: project
 title: 'Tree Squirrel Wind Sculpture'
 date: 2016-05-01 00:00:00
 categories: experience
-tags: Solidworks Fabrication
+tags: CAD Fabrication
 featured_image: '/img/posts/tree_squirrel/top.jpg'
 project_link:
 button_icon: 'cog'
