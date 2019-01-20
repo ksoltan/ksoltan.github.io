@@ -457,7 +457,8 @@ button.btn, input.btn {
 }
 
 .flex-design{
-  width: 80%;
+  // width: 97.5%;
+  // width: 95%;
   .flex-img {
     @include bp-xsmall {
       display: none;
@@ -492,6 +493,15 @@ button.btn, input.btn {
     text-align: center;
     padding: none;
     margin-bottom: 0px;
+  }
+
+  p.slide_description {
+    width: 95%;
+    margin-left: -1em;
+    text-align: left;
+    @include bp-xsmall {
+      width: 100%;
+    }
   }
 }
 

@@ -1,12 +1,19 @@
-{% if page.slide_show %}
-  <div class=" flex-design flexslider">
+<div class="post-content-wrap">
+  <div class="flexslider flex-design align-center">
     <ul class="slides">
-      {% for slide in page.slide_show %}
+      {% for slide in include.slide_show %}
         <li>
-          <p class="slide_text">{{ slide.caption }}</p>
-          <img class="img-responsive flex-img" src="{{ slide.image }}">
+          <div class="row align-top">
+            <div class="col-xs-8 col-md-8">
+              <img class="img-responsive flex-img" src="{{ slide.image }}">
+            </div>
+
+            <div class="col-xs-4 col-md-4">
+              <p class="slide_description">{{slide.caption  | newline_to_br }}</p>
+            </div>
+          </div>
         </li>
       {% endfor %}
     </ul>
   </div>
-  {% endif %}
+</div>
