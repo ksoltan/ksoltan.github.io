@@ -2,7 +2,7 @@
   {% for img in include.content %}
     {% if img.side == "left" %}
       {% include media.html content=img %}
-      <p class="caption">{{img.caption | newline_to_br}}</p>
+      {% include caption.html content=img.caption %}
     {% endif %}
   {% endfor %}
   </div>
@@ -10,7 +10,7 @@
   {% for img in include.content %}
     {% if img.side == "right" %}
       {% include media.html content=img %}
-      <p class="caption">{{img.caption | newline_to_br}}</p>
+      {% include caption.html content=img.caption %}
     {% endif %}
   {% endfor %}
 </div>

@@ -19,21 +19,21 @@ gallery:
       caption: The final demonstration of the kinetic sculpture.
     - side: center
       image: /img/posts/electric_eel/body.jpg
-      caption: Tiny caption.
+      caption: Aluminum plates move in a sinusoidal pattern one after the other, driven by the "ribs" of the fish, made up of cams offset rotationally from each other.
   - columns: 2
     content:
     - side: right
       image: /img/posts/electric_eel/drivetrain.jpg
-      caption: Tiny caption.
+      caption: The main shaft is powered by a gearbox with a 9:16 reduction ratio. A button embedded in the base plate controls the DC motor connected to the gearbox.
     - side: left
       image: /img/posts/electric_eel/discs.jpg
-      caption: Tiny caption.
+      caption: The telescoping tubing is a failure point in the design, often jamming and slipping out. Using two pieces instead of three could have improved the follower.
     - side: right
       image: /img/posts/electric_eel/tail.jpg
-      caption: Tiny caption.
+      caption: The sheet metal head and tail were made in halves, puched, folded, soldered together, and polished for an organic aesthetic.
     - side: left
       image: /img/posts/electric_eel/bottom.jpg
-      caption: Tiny caption.
+      caption: A four bar linkage, powered by a belt and pulley with a 1:3 reduction ratio, connects to a tube that rotates the tail back and forth as the eel moves.
     - side: left
       video_url: https://www.youtube.com/embed/ayc-AaQqgDE
       caption: Top view of the sculpture after demo day, when a team member restored some of the telescoping tubing-driven discs.
