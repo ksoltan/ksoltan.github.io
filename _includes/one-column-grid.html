@@ -1,0 +1,10 @@
+<div class="row align-top">
+  <div class="col-md-2"></div>
+    <div class="col-xs-8 col-md-8">
+      {% for img in include.content %}
+        {% include media.html content=img %}
+          <p class="caption">{{img.caption | newline_to_br}}</p>
+      {% endfor %}
+    </div>
+  <div class="col-md-2"></div>
+</div>

@@ -1,0 +1,13 @@
+<div class="wow fadeIn">
+<div class="post-content-wrap">
+  {% for section in include.gallery %}
+    <div class="row align-top">
+      {% if section.columns == 1 %}
+        {% include one-column-grid.html content=section.content %}
+      {% else if section.columns == 2 %}
+        {% include two-column-grid.html content=section.content %}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+</div>
