@@ -61,6 +61,6 @@ Our team of 5 chose to create a bio-inspired project and designed a tree that ch
 I primarily worked on the squirrel mechanism, attempting to push the bounds of what I could do with sheet metal and four-bar linkages.
 {% endcapture %}
 {% include image-left.html image='/img/posts/tree_squirrel/sculpture.jpg' content=project_description %}
-<h1 class="section-title text-center">The Design</h1>
+<h1 class="section-title text-center">Design</h1>
 
 {% include gallery.html gallery=page.gallery %}
