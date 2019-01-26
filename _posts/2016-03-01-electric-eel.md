@@ -52,6 +52,6 @@ It never stop swimming, never stops living,
 For though it will die, it will not die today.</p>
 {% endcapture %}
 {% include image-left.html image='/img/posts/electric_eel/final_prototype.jpg' content=poem %}
-<h1 class="section-title text-center">The Design</h1>
+<h1 class="section-title text-center">Design</h1>
 
 {% include gallery.html gallery=page.gallery %}
