@@ -6,8 +6,8 @@ date: 2016-11-01 00:00:00
 categories: experience
 tags: Design Fabrication Project-Management
 featured_image: '/img/posts/whale_target/stage1Build.jpg'
-button_icon: 'cog'
-button_text: 'Coming Soon'
+button_icon: 'flask'
+button_text: 'Visit Project'
 lead_text: 'A life-size target of the back of a whale for drone whale tagging research.'
 secondary_text: 'The MDF frame, covered with StyroSpray-hardened fabric, measures 20 ft in length and 8 ft at its widest, an eight of an adult blue whale.'
 gallery:

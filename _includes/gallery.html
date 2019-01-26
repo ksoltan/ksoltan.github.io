@@ -8,8 +8,10 @@
         {% else %}
           {% include one-column-grid-small.html content=section.content %}
         {% endif %}
-      {% else if section.columns == 2 %}
+      {% elsif section.columns == 2 %}
         {% include two-column-grid.html content=section.content %}
+      {% elsif section.columns == 3 %}
+        {% include three-column-grid.html content=section.content %}
       {% endif %}
     </div>
   {% endfor %}
