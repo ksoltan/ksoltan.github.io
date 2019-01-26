@@ -1,6 +1,6 @@
 ---
 layout: inner
-post_type: project
+post_type: blog
 title: 'Dragoncat Play Experience'
 date: 2015-12-01 00:00:00
 categories: experience

@@ -1,0 +1,8 @@
+<div class="col-md-2"></div>
+<div class="col-xs-12 col-md-8">
+  {% for img in include.content %}
+    {% include media.html content=img %}
+    {% include caption.html content=img.caption %}
+  {% endfor %}
+</div>
+<div class="col-md-2"></div>
