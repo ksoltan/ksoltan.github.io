@@ -54,7 +54,7 @@ gallery3:
       image: /img/posts/fish_tagging/pifgBoat.jpg
       caption: Field testing was performed off of Kona in Hawaii where the first of HI Tag RFID tags were deployed.
     - side: right
-      image: /img/posts/fish_tagging/cap_john_in_action.jpg
+      image: /img/posts/fish_tagging/cap_john_in_action.JPG
       caption: Our app was put through its first trial with PIFG fishermen and LPRC researchers.
   - columns: 1
     size: full
