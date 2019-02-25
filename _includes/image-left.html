@@ -13,7 +13,9 @@
           {% else %}
             <img class="img-responsive" src="{{ page.featured_image }}">
           {% endif %}
-          <p class="caption">{{include.image_caption}}</p>
+          {% if include.image_caption %}
+            {% include caption.html content=include.image_caption %}
+          {% endif %}
         {% endif %}
       </div>
 
@@ -22,7 +24,11 @@
           <p class="description">{{ include.content | newline_to_br }}</p>
 
           {% for button in include.project_buttons %}
-            <a href="{{ button.button_link }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-{{button.button_icon}} fa-lg"></i>{{button.button_text}}</button></a>
+            {% if button.is_email %}
+              <a data-toggle="modal" data-target="#contact"><button class="btn btn-default btn-lg"><i class="fa fa-{{button.button_icon}} fa-lg"></i>{{button.button_text}}</button></a>
+            {% else %}
+              <a href="{{ button.button_link }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-{{button.button_icon}} fa-lg"></i>{{button.button_text}}</button></a>
+            {% endif %}
           {% endfor %}
 
         </div>

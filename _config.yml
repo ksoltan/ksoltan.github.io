@@ -16,7 +16,7 @@
 title: "Katerina Soltan"
 subtitle: "Engineer and Designer"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ksoltan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ksoltan.com/" # the base hostname & protocol for your site, e.g. http://example.com
 email: 'kattsoltan@gmail.com'
 email_username: 'kattsoltan@gmail.com'
 github_username: 'ksoltan'
