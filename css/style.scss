@@ -347,9 +347,12 @@ button.btn, input.btn {
 .section-title {
   position: relative;
   margin: 0 auto;
+  @include bp-xsmall {
+    margin-top: 1.5em; // Prevent title from intersecting with header in post.
+  }
   margin-bottom: 1em;
   &:after {
-    content: '';
+    content: ' ';
     position: absolute;
     top: 1.35em;
     width: 3em;
@@ -480,7 +483,7 @@ br.poem{
   }
   img.img-responsive {
     @include bp-xsmall {
-      display: none;
+      width: 95%; // Show images in post if small screen.
     }
   }
   .videoWrapper {
@@ -519,6 +522,10 @@ br.poem{
     text-align: left;
     @include bp-xsmall {
       margin-left: 0;
+      margin-top: -2em;
+    }
+    @include bp-small {
+      margin-top: -2em;
     }
     .description {
       width: 95%;
