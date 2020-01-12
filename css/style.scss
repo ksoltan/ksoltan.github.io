@@ -254,9 +254,10 @@ button.btn, input.btn {
   margin: 0 auto;
   margin-bottom: 1em;
   &:after {
-    content: '';
+    content: ' ';
     position: absolute;
-    top: 1.35em;
+    // top: 1.35em;
+    top: 115%;
     width: 3em;
     height: 3px;
     background-color: #ECEFF1;
@@ -347,18 +348,23 @@ button.btn, input.btn {
 .section-title {
   position: relative;
   margin: 0 auto;
+  @include bp-xsmall {
+    margin-top: 1.5em; // Prevent title from intersecting with header in post.
+  }
   margin-bottom: 1em;
   &:after {
-    content: '';
+    content:' ';
     position: absolute;
-    top: 1.35em;
+    // top: 1.35em;
     width: 3em;
     height: 3px;
     background-color: #ECEFF1;
+    top: 115%; // Make sure line is below multi-lined title
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    content:' ';
   }
 }
 
@@ -403,7 +409,8 @@ button.btn, input.btn {
       &:after {
         content: '';
         position: absolute;
-        top: 1.5em;
+        // top: 1.5em;
+        top: 115%; // Make sure line is underneath multi-line title.
         left: 0;
         width: 3em;
         height: 3px;
@@ -480,7 +487,7 @@ br.poem{
   }
   img.img-responsive {
     @include bp-xsmall {
-      display: none;
+      width: 95%; // Show images in post if small screen.
     }
   }
   .videoWrapper {
@@ -519,6 +526,10 @@ br.poem{
     text-align: left;
     @include bp-xsmall {
       margin-left: 0;
+      margin-top: -2em;
+    }
+    @include bp-small {
+      margin-top: -2em;
     }
     .description {
       width: 95%;
