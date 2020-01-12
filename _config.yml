@@ -30,7 +30,7 @@ plugins:
 
 ### Phantom settings
 paginate: 10
-footer_text: '© 2019 Katerina Soltan'
+footer_text: '© 2020 Katerina Soltan'
 admin_name: 'Katerina Soltan'
 enable_contact: false
 
