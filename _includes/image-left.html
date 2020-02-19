@@ -13,9 +13,9 @@
           {% else %}
             <img class="img-responsive" src="{{ page.featured_image }}">
           {% endif %}
-          {% if include.image_caption %}
-            {% include caption.html content=include.image_caption %}
-          {% endif %}
+        {% endif %}
+        {% if include.image_caption %}
+          {% include caption.html content=include.image_caption %}
         {% endif %}
       </div>
 
