@@ -1,8 +1,12 @@
 <div class="col-xs-12 col-md-6">
   {% for img in include.content %}
     {% if img.side == "left" %}
-      {% include media.html content=img %}
-      {% include caption.html content=img.caption %}
+      {% if img.type == "text" %}
+        {% include text.html content=img.text %}
+      {% else %}
+        {% include media.html content=img %}
+        {% include caption.html content=img.caption %}
+      {% endif %}
     {% endif %}
   {% endfor %}
 </div>
