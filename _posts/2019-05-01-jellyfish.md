@@ -66,8 +66,6 @@ process_gallery:
 {% capture project_description %}
 We do not notice the signs of climate change until they are at our doorstep. When jellyfish blooms began clogging filtration systems and negatively impacting the economy, suddenly, people were interested.
 I wanted to create a different type of conversation about climate change by creating a speculative future where jellyfish physically invade our land territory.
-Starting with the idea of creating a red tide of angrily flashing lights in a forest, I built three larger-than-life blobs out of sewn plastic bags and wire and wood-reinforced frames. With the help of the wind, they captured the graceful essence of real jellyfish, and even started a few conversations about what green spaces meant to students.
-Talk to me about jellyfish! I have a slight obsession :)
 {% endcapture %}
 {% include image-left.html image_caption="For the best video experience, watch with the sound on!" video_url="https://www.youtube-nocookie.com/embed/96NEHSZuEyI" project_buttons=page.project_buttons content=project_description %}
 
